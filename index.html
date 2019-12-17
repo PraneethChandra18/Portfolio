@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./ajax.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="./style.css">
+
+<style>
+body,html{
+	min-height: 100%;
+}
+body {
+      background-image: url("backg2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+h2 {
+      font-size:100px;
+      font-family: cursive;
+      top: 100px;
+      padding-top: 200px;
+      padding-right: 5px;
+      color: black;
+      text-align: right;
+    }
+@media (max-width: 600px)
+{
+  h2{
+      font-size: 44px;
+    }
+  h1{
+      font-size: 20px;
+    }
+  p{
+      font-size: 15px;
+    }
+    }
+</style>
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a class="active" href="./index.html">Home</a>
+    <a href="./details.html">Details</a>
+    <a href="./hobbies.html">Hobbies</a>
+    <a href="./interests.html">Interests</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+    <h2>Praneeth Chandra</h2>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
